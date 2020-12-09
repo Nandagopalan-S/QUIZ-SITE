@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+/*====HEADER====*/
+header{
+    background: url(./pics/header.jpg) center/cover fixed no-repeat;
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-between;
+    position: sticky;
+    top: 0;  
+}  
+
+header p{
+    font-size: 25px;
+    color: rgb(204, 0, 112);
+}
+
+header img{
+    float: right;
+}
+@media screen and (min-width:700px){
+    header{
+        background: url(./pics/header.jpg) center/cover fixed no-repeat;
+        display: flex;
+        flex-wrap: wrap;    
+        justify-content: space-between;
+        position: sticky;
+        top: 0;  
+    }
+    header p{
+        font-size: 45px;
+        
+    }
+    header img{
+        float: right;
+    }
+
+}
+
+
+/*====BODY====*/
+body{
+    background: url(./pics/idea.jpg) center/cover fixed no-repeat;    
+}
+
+
+/*====ANSWER====*/
+.answers { 
+list-style: upper-alpha; 
+text-align: left;
+font-size: 30px;
+margin-left: 150px;
+} 
+
+/*====QUESTION====*/
+.question{
+text-align: left;
+font-size: 40px;
+margin-left: 50px;
+}
+
+/*====LABEL====*/
+label { 
+margin-left: 20px; 
+cursor: pointer; 
+} 
+
+/*====RESULTS====*/
+#results { 
+background: #dddada; 
+color: 000000; 
+padding: 3px; 
+text-align: center; 
+font-size: 20px;
+width: 200px;
+margin-left: 40%;
+margin-bottom: 8px; 
+cursor: pointer; 
+border: 2px solid gray; 
+border-radius: 20px;
+}
+/*media screen for question, answer, label, result*/
+@media screen and (max-width:600px){
+    .answers{
+        font-size: 40px;
+    }
+    .question{
+        font-size: 50px;
+    }
+    #results {
+        background: #dddada; 
+        color: 000000; 
+        padding: 3px; 
+        text-align: center; 
+        font-size: 20px;
+        width: 200px;
+        margin-left: 40%;
+        margin-bottom: 8px; 
+        cursor: pointer; 
+        border: 2px solid gray; 
+        border-radius: 20px;
+    }
+}
+/*end of media screen for question, answer, label, result*/
+
+#results:hover { 
+color: #13181a; 
+background: rgb(10, 185, 10); 
+cursor: pointer; 
+} 
+
+/*====CATEGORIES====*/
+#categorylist { 
+margin-top: 6px; 
+display: block; 
+} 
+
+#category1, #category2, #category3, #category4, #category5, #category6, #category7, #category8, #category9, #category10, #category11, #category12, #category13, #category14, #category15, #category16, #category17, #category18, #category19, #category20, #category21, #category22, #category23, #category24, #category25, #category26, #category27, #category28, #category29, #category30, #category31 { 
+display: none;
+font-size: 30px; 
+margin-left: 40px;
+}
+
+#closing {
+display: none;
+font-style: bold;
+}
